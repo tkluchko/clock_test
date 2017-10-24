@@ -1,0 +1,31 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+digit_out                                                         0x0160       4
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+cur_dig                                                           R5           1
+seconds                                                           R4           1
+minutes                                                           R7           1
+hours                                                             R6           1
+day                                                               R9           1
+date                                                              R8           1
+month                                                             R11          1
+year                                                              R10          1
+button_1_on1                                                      R2.0      1bit
+button_2_on1                                                      R2.1      1bit
+button_3_on1                                                      R2.2      1bit
+button_1_on2                                                      R2.3      1bit
+button_2_on2                                                      R2.4      1bit
+button_3_on2                                                      R2.5      1bit
+button_1_on3                                                      R2.6      1bit
+button_2_on3                                                      R2.7      1bit
+button_3_on3                                                      R3.0      1bit
+show_point                                                        R3.1      1bit
+mode                                                              R13          1

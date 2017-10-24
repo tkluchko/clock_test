@@ -79,11 +79,12 @@ twi_start();
 twi_stop();    
 }
 
-void rtc_set_time(unsigned char minutesParam, unsigned char hoursParam, unsigned char dayParam, unsigned char dateParam, unsigned char monthParam, unsigned char yearParam) {
+
+void rtc_set_time(unsigned char secondsParam, unsigned char minutesParam, unsigned char hoursParam, unsigned char dayParam, unsigned char dateParam, unsigned char monthParam, unsigned char yearParam) {
     twi_start();
     twi_write(DS3231_I2C_ADDRESS_WRITE);
     twi_write(0);
-    twi_write(decToBcd(0));
+    twi_write(decToBcd(secondsParam));
     twi_write(decToBcd(minutesParam));
     twi_write(decToBcd(hoursParam));
     twi_write(decToBcd(dayParam));

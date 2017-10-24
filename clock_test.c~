@@ -328,7 +328,7 @@ interrupt [TIM1_OVF] void timer1_ovf_isr(void)
 interrupt [TIM2_OVF] void timer2_ovf_isr(void) {
 	PORTB&=0b11110000;
 	PORTD=digit[digit_out[cur_dig]];
-	if(show_point && cur_dig == 1 && mode == MODE_SHOW_MAIN_INFO)
+	if(show_point && cur_dig == 1)
 		PORTD^=DP;
 		
 
